@@ -12,7 +12,7 @@ export const generateOtp = () =>  {
  * @returns {string} The HTML string containing the OTP.
  */
 /*******  5287ae58-54c9-458f-aeae-030d1d7ea1d2  *******/  
-export const generateHtmlOtp = (otp) => {
+export const generateHtmlOtp = (otp: string) => {
     return `<p style="font-family:Arial, sans-serif; color:#333; font-size:14px;">
   Hi there,<br><br>
 
@@ -27,8 +27,9 @@ export const generateHtmlOtp = (otp) => {
     background:#f0f4ff;
     padding:8px 16px;
     border-radius:6px;
+    latter-spacing: 4px;
   ">
-    ${otp.split('').join(' ')}
+    ${otp}
   </span>
   <br><br>
 
@@ -38,7 +39,7 @@ export const generateHtmlOtp = (otp) => {
 </p>`;
 }
 
-export const generateHtmlResetPassword = (token) => {
+export const generateHtmlResetPassword = (token: string) => {
     return `<p style="font-family:Arial, sans-serif; color:#333; font-size:14px;">
   Hi there,<br><br>
 

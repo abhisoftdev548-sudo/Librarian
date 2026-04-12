@@ -1,6 +1,6 @@
 import express from 'express';
-import authController from '../controllers/auth.controller.js';
-import rateLimitingMiddleware from '../middlewares/rateLimitingMiddleware.js';
+import authController from '../controllers/auth.controller.ts';
+import rateLimitingMiddleware from '../middlewares/rateLimitingMiddleware.ts';
 
 const router = express.Router();
 router.post('/register', authController.registerUserController);

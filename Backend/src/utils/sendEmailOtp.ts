@@ -1,6 +1,6 @@
-import { transporter } from "../config/mailConfig.js";
+import { transporter } from "../config/mailConfig.ts";
 
-export const sendEmailOtp = async (toEmail,subject,  message, html) => {
+export const sendEmailOtp = async (toEmail: string, subject: string,  message: string, html: string) => {
   try {
     const info = await transporter.sendMail({
       from: '"BT-Notes" <btnotes321@gmail.com>',
