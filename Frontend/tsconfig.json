@@ -1,4 +1,11 @@
 {
+  "compilerOptions": {
+    "ignoreDeprecations": "6.0", // <-- Ye line add karo
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
