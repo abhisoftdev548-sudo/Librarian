@@ -1,7 +1,10 @@
-import { FaBan, FaBrain } from "react-icons/fa";
-import { RiFocus2Line } from "react-icons/ri";
-import { GrPersonalComputer } from "react-icons/gr";
+import { FaBan, FaBrain, FaLinkedin, FaTwitter } from "react-icons/fa";
+import {  RiFocus2Line } from "react-icons/ri";
+import { GrGithub, GrPersonalComputer } from "react-icons/gr";
 import { IoPricetag } from "react-icons/io5";
+import { IoBookOutline } from "react-icons/io5";
+import { SlNotebook } from "react-icons/sl";
+import { LuLock } from "react-icons/lu";
 /*************  ✨ Windsurf Command ⭐  *************/
 /**
  * A component for handling authentication
@@ -43,9 +46,9 @@ const Auth = ()   => {
         <div className='text-lg text-wrap max-w-xl'>
           Create, organize, and share your knowledge. Store files, notes, and sensitive data in one secure place. Learn without distraction.
         </div>
-         <div className='flex w-full justify-center gap-8  max-w-sm font-medium text-lg'>
+         <div className='flex w-full justify-center items-center gap-8  max-w-sm font-medium text-lg'>
           <button className='bg-[#4F46E5] text-white py-3 rounded-md text-center w-full '>Get Started</button>
-          <button className='border border-[#E2E8F0] py-3 rounded-md text-center w-full  hover:border-[#8bbaf3]'>Log In</button>
+          <button className='border border-[#7dade8] py-3 rounded-md text-center w-full  hover:border-[#297adc]'>Log In</button>
         </div>
         <div>
           <ul className='flex  gap-4'>
@@ -94,7 +97,121 @@ const Auth = ()   => {
          <div>
           <span className='text-3xl md:text-4xl lg:text-5xl font-black flex flex-col gap-2'><span>One platform for all</span>    <span className='text-[#4F46E5]'>your knowledge</span></span>
         </div>
+        <div className='text-lg text-wrap max-w-xl text-[#475569] '>
+          From personal notes to published courses, Librarian adapts to how you learn and create.
+        </div>
+
+          <div className="flex flex-col md:flex-row items-center justify-between max-w-6xl w-full mx-auto ">
+              <div className="flex flex-col gap-3 text-wrap  md:justify-center">
+                <h2 className="text-4xl  font-black text-start"><span>Transform Chaos into Clarity with</span> <span className="text-[#4F46E5]">Zen Mode</span></h2>
+                <p className="text-lg text-start">Just paste a link and make playlists to experience a distraction-free learning environment. No ads, no recommendations—just you and your studies.</p>
+              </div>
+            <div className="  w-full flex justify-center md:justify-end">
+              <img src="./library-boy.png" alt="" className=" " />
+              </div>
+              </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:max-w-6xl md:max-w-4xl max-w-2xl py-10 gap-10">
+         <div className="flex flex-col  justify-center shadow-xl hover:shadow-2xl transition-all duration-400 hover:-translate-y-2 border rounded-md border-[#475569]">
+          <div className="bg-gray-300 min-h-40">
+            <img src="./favicon.svg" alt="" />
+          </div>
+          <div className="p-10 flex flex-col gap-2">
+            <div className="flex gap-2 items-center font-bold text-lg text-[#0F172A]"><span className="p-2 rounded-md bg-gray-200 "><IoBookOutline/></span><span>Smart Library Creation</span></div>
+            <div className="text-start">Build organized digital libraries for any subject. Store all your learning content in one structured, distraction-free environment.
+
+</div>
+          </div>
+         </div>
+
+         <div className="flex flex-col  justify-center shadow-xl hover:shadow-2xl transition-all duration-400 hover:-translate-y-2 border rounded-md border-[#475569]">
+          <div className="bg-gray-300 min-h-40">
+            <img src="./favicon.svg" alt="" />
+          </div>
+          <div className="p-10 flex flex-col gap-2">
+            <div className="flex gap-2 items-center font-bold text-lg text-[#0F172A]"><span className="p-2 rounded-md bg-gray-200 "><SlNotebook/></span><span>Encrypted Lockers</span></div>
+            <div className="text-start">Build organized digital libraries for any subject. Store all your learning content in one structured, distraction-free environment.
+
+</div>
+          </div>
+         </div>
+
+         <div className="flex flex-col  justify-center shadow-xl hover:shadow-2xl transition-all duration-400 hover:-translate-y-2 border rounded-md border-[#475569]">
+          <div className="bg-gray-300 min-h-40">
+            <img src="./favicon.svg" alt="" />
+          </div>
+          <div className="p-10 flex flex-col gap-2">
+            <div className="flex gap-2 items-center font-bold text-lg text-[#0F172A]"><span className="p-2 rounded-md bg-gray-200 "><LuLock/></span><span>Smart Library Creation</span></div>
+            <div className="text-start">Build organized digital libraries for any subject. Store all your learning content in one structured, distraction-free environment.
+
+</div>
+          </div>
+         </div>
+        </div>
       </section>
+      
+
+      <footer className="bg-gray-200 ">
+        <div className="max-w-7xl mx-auto   grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pt-10 pb-5">
+
+        <div className="flex i justify-center   w-full">
+          <div className="flex flex-col gap-4  max-w-60">
+
+          <div className="flex items-center gap-2">
+            <div className="p-2 rounded-lg bg-blue-500 w-fit font-bold text-white text-2xl"><IoBookOutline/></div>
+            <div className="text-2xl font-bold">Librarian</div>
+          </div>
+          <div className="text-sm text-wrap">Your digital knowledge hub. Create libraries, store learning content, and share your knowledge with the world.</div>
+          <div className="flex items-center gap-2">
+            <div className="p-2 rounded-full bg-gray-400 text-white text-sm"><GrGithub/></div>
+            <div className="p-2 rounded-full bg-gray-400 text-white text-sm"><FaTwitter/></div>
+            <div className="p-2 rounded-full bg-gray-400 text-white text-sm"><FaLinkedin/></div>
+          </div>
+          </div>
+        </div>
+       <div className="flex justify-center items-start">
+          <div className="flex flex-col gap-2">
+
+          <h2 className="font-bold text-[16px] uppercase">Product</h2>
+          <ul className="text-[14px] flex flex-col gap-1">
+            <li>Features</li>
+            <li>Pricing</li>
+            <li>Changelog</li>
+            <li>Roadmap</li>
+          </ul>
+          </div>
+        </div>
+       <div className="flex justify-center items-start">
+          <div className="flex flex-col gap-2">
+
+          <h2 className="font-bold text-[16px] uppercase">Resources</h2>
+          <ul className="text-[14px] flex flex-col gap-1">
+            <li>Dcumentation</li>
+            <li>Blog</li>
+            <li>Community</li>
+            <li>Support</li>
+
+          </ul>
+          </div>
+        </div>
+        <div className="flex justify-center items-start">
+          <div className="flex flex-col gap-2">
+
+          <h2 className="font-bold text-[16px] uppercase">COMPANY</h2>
+          <ul className="text-[14px] flex flex-col gap-1">
+            <li className="w-full">About</li>
+            <li>Careers</li>
+            <li>Privacy</li>
+            <li>Terms</li>
+          </ul>
+        </div>
+          </div>
+        </div>
+
+        <div className="max-w-7xl border-t border-gray-400 mx-auto mt-6 flex items-center justify-between p-5">
+            <div className="text-sm">© 2026 Librarian. All rights reserved.</div>
+            <div className="text-sm">Made with ❤️ for lerners</div>
+        </div>
+      </footer>
 
     </div>
   )
