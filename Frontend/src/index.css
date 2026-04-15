@@ -1,19 +1,45 @@
 @import "tailwindcss";
-@tailwind/preflight;
-@tailwind utilities;
 
-/* Agar components error de raha hai, toh usey skip karke 
-seedhe apni custom classes yahan likhein */
+@theme {
+  /* Colors mapping */
+  --color-brand-primary: #4F46E5;
+  --color-brand-bg: var(--bg-main);
+  --color-brand-hero: var(--bg-hero);
+  --color-brand-text: var(--text-main);
+  --color-brand-muted: var(--text-muted);
+  --color-brand-card: var(--card-bg);
+  --color-brand-border: var(--border-color);
+  --color-brand-footer: var(--bg-footer);
 
-@layer components {
-  .animate-float {
-    animation: float 3s ease-in-out infinite;
+  /* Animation */
+  /* Ye line animation register karti hai */
+  --animate-float: float 3s ease-in-out infinite;
+
+  /* Ye logic batata hai ki animation kaise hogi */
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
   }
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-20px); }
+@layer base {
+  :root {
+    --bg-main: #F8FAFC;     /* Clean White-Gray */
+    --bg-hero: #F1F5F9;     /* Slight contrast for hero */
+    --bg-footer: #E2E8F0;
+    --text-main: #0F172A;   /* Dark Navy for text */
+    --text-muted: #475569;  /* Gray-Slate for sub-text */
+    --card-bg: #FFFFFF;
+    --border-color: #CBD5E1;
+  }
+
+  .dark {
+    --bg-main: #020617;     /* Midnight Navy */
+    --bg-hero: #0F172A;     /* Slate-900 for hero */
+    --bg-footer: #020617;
+    --text-main: #F8FAFC;   /* Soft White */
+    --text-muted: #94A3B8;  /* Muted Slate */
+    --card-bg: #1E293B;     /* Slate-800 */
+    --border-color: #334155;
+  }
 }
-
-
