@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+
+html::-webkit-scrollbar{
+  display: none;
+}
 @theme {
   /* Colors mapping */
   --color-brand-primary: #4F46E5;
@@ -43,3 +47,4 @@
     --border-color: #334155;
   }
 }
+

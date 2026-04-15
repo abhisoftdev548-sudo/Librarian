@@ -2,9 +2,11 @@ import React, { useState } from 'react'
 
 import { IoMenu } from 'react-icons/io5';
 import { RxCross2 } from "react-icons/rx";
+
 const Navbar:React.FC = () => {
   const [navOpen, setNavOpen] = useState(false)
   return (
+
     <nav className='shadow-xl z-50 fixed top-0 left-0 right-0 w-full bg-transparent backdrop-blur-2xl overflow-hidden '>
       <div className='flex flex-col h-full'>
 
@@ -31,7 +33,7 @@ const Navbar:React.FC = () => {
          <hr className='md:hidden border-brand-border' />
         {
           navOpen && (
-           
+            
         <div className='md:hidden flex flex-col max-w-[90%] px-5 gap-4 mx-auto pb-5 w-full'>
           <div className='w-full items-center flex flex-col py-2'>
             <ul className='text-brand-muted flex w-full justify-center gap-3 font-medium text-sm flex-col'>
@@ -50,6 +52,7 @@ const Navbar:React.FC = () => {
         
       </div>
       </nav>
+      
   )
 }
 

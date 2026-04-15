@@ -7,6 +7,10 @@ import { SlNotebook } from "react-icons/sl";
 import { LuLock, LuSun, LuMoon } from "react-icons/lu";
 import { useEffect, useState } from "react";
 import Navbar from "@/components/Navbar";
+import ColoredDot from "@/components/utilities/ColoredDot";
+import HeroSection from "./components/HeroSection";
+import FeaturesBanner from "./components/FeaturesBanner";
+import { Reveal } from "@/components/utilities/Reveal";
 
 
 const Auth = () => {
@@ -32,65 +36,14 @@ const Auth = () => {
       {/* Navbar */}
       <Navbar/>
 
-      <main className="bg-brand-hero relative w-full">
-        <section className='flex flex-col-reverse max-w-[90%] mx-auto py-20 pt-32 md:flex-row md:justify-between justify-center items-center md:items-center '>
-          <div className='flex flex-col gap-8'>
-            <div className='px-3 py-1 text-[14px] border rounded-2xl border-brand-primary w-fit font-bold bg-brand-primary/20 text-brand-primary'>
-              Your digital knowledge hub
-            </div>
-            <div>
-              <span className='text-3xl md:text-4xl lg:text-5xl font-black flex flex-col gap-2 text-brand-text'>
-                <span>CREATE AND LEARN</span> 
-                <span>FROM YOUR OWN</span>   
-                <span className='text-brand-primary'>DIGITAL LIBRARY</span>
-              </span>
-            </div>
-            <div className='text-lg text-wrap max-w-xl text-brand-muted'>
-              Create, organize, and share your knowledge. Store files, notes, and sensitive data in one secure place. Learn without distraction.
-            </div>
-            <div className='flex w-full justify-center items-center gap-8 max-w-sm font-medium text-lg'>
-              <button className='bg-brand-primary text-white py-3 rounded-md text-center w-full'>Get Started</button>
-              <button className='border border-brand-primary text-brand-text py-3 rounded-md text-center w-full hover:bg-brand-primary/10'>Log In</button>
-            </div>
-            <div>
-              <ul className='flex gap-4 text-brand-muted text-sm'>
-                <li>• Notes & Files</li>
-                <li>• Encrypted Lockers</li>
-                <li>• Course Builder</li>
-              </ul>
-            </div>
-          </div>
-          <div className='animate-float max-w-87.5 md:max-w-96 drop-shadow-2xl relative'>
-            <div className='absolute px-3 py-1 rounded-2xl border border-brand-border text-[14px] font-bold bg-brand-card/80 text-brand-text top-10 -right-1 flex items-center gap-2 shadow-lg'>
-              <span className='min-w-2 min-h-2 rounded-full bg-green-500 inline-block'></span>
-              <span>No Distraction</span>
-            </div>
-            <img src="./digital-image.png" alt="Hero" className="" />
-          </div>
-        </section>
-      </main>
+     <HeroSection/>
 
       {/* Stats/Feature Section */}
-      <section className="w-full h-fit -mt-16 md:-mt-10 relative z-40">
-        <div className="grid items-center grid-cols-2 md:grid-cols-4 gap-2 max-w-[90%] mx-auto bg-brand-card p-5 shadow-2xl rounded-md border border-brand-border">
-          <div className="flex flex-col gap-2 p-4 md:text-[16px] text-[12px] border-r border-brand-border items-center text-center">
-            <FaBan className="text-red-500 text-xl"/>
-            <p className="font-bold text-brand-text">Distraction Free</p>
-          </div>
-          <div className="flex flex-col gap-2 p-4 md:text-[16px] text-[12px] md:border-r border-brand-border items-center text-center">
-            <RiFocus2Line className="text-blue-500 text-xl"/>
-            <p className="font-bold text-brand-text">Focus Your Study</p>
-          </div>
-          <div className="flex flex-col gap-2 p-4 md:text-[16px] text-[12px] border-r border-brand-border items-center text-center">
-            <GrPersonalComputer className="text-green-500 text-xl"/>
-            <p className="font-bold text-brand-text">Digital Library</p>
-          </div>
-          <div className="flex flex-col gap-2 p-4 md:text-[16px] text-[12px] items-center text-center">
-            <FaBrain className="text-pink-500 text-xl"/>
-            <p className="font-bold text-brand-text">AI Powered</p>
-          </div>
-        </div>
-      </section>
+      <Reveal delay={0.2}>
+
+     <FeaturesBanner/>
+      </Reveal>
+
 
       {/* Content Section */}
       <section className="text-center mt-20 w-full flex flex-col justify-center items-center gap-5 px-5">
