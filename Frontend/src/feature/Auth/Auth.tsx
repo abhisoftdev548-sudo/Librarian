@@ -1,13 +1,13 @@
-import { FaBan, FaBrain, FaLinkedin, 
+import { FaLinkedin, 
   FaTwitter } from "react-icons/fa";
-import { RiFocus2Line } from "react-icons/ri";
-import { GrGithub, GrPersonalComputer } from "react-icons/gr";
+
+import { GrGithub, } from "react-icons/gr";
 import { IoPricetag, IoBookOutline } from "react-icons/io5";
 import { SlNotebook } from "react-icons/sl";
 import { LuLock, LuSun, LuMoon } from "react-icons/lu";
 import { useEffect, useState } from "react";
 import Navbar from "@/components/Navbar";
-import ColoredDot from "@/components/utilities/ColoredDot";
+
 import HeroSection from "./components/HeroSection";
 import FeaturesBanner from "./components/FeaturesBanner";
 import { Reveal } from "@/components/utilities/Reveal";
