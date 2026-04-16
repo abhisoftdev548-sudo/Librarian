@@ -5,7 +5,7 @@ import { GrGithub, } from "react-icons/gr";
 import { IoPricetag, IoBookOutline } from "react-icons/io5";
 import { SlNotebook } from "react-icons/sl";
 import { LuLock, LuSun, LuMoon } from "react-icons/lu";
-import { useEffect, useState } from "react";
+
 import Navbar from "@/components/Navbar";
 
 import HeroSection from "./components/HeroSection";
