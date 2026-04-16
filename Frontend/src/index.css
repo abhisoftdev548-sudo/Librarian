@@ -7,6 +7,7 @@ html::-webkit-scrollbar{
 @theme {
   /* Colors mapping */
   --color-brand-primary: #4F46E5;
+  --color-brand-secondary: var(--bg-secondary);
   --color-brand-bg: var(--bg-main);
   --color-brand-hero: var(--bg-hero);
   --color-brand-text: var(--text-main);
@@ -35,6 +36,8 @@ html::-webkit-scrollbar{
     --text-muted: #475569;  /* Gray-Slate for sub-text */
     --card-bg: #FFFFFF;
     --border-color: #CBD5E1;
+    --bg-secondary: #e7e7ff;
+
   }
 
   .dark {
@@ -45,6 +48,7 @@ html::-webkit-scrollbar{
     --text-muted: #94A3B8;  /* Muted Slate */
     --card-bg: #1E293B;     /* Slate-800 */
     --border-color: #334155;
+    --bg-secondary: #101a31;
   }
 }
 

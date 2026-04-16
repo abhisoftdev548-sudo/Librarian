@@ -12,10 +12,14 @@ import HeroSection from "./components/HeroSection";
 import FeaturesBanner from "./components/FeaturesBanner";
 import { Reveal } from "@/components/utilities/Reveal";
 
+import { useAuth } from "@/Context/AuthContext";
+import AuthForm from "./AuthForm/AuthForm";
+
 
 const Auth = () => {
 
   const [theme, setTheme] = useState(localStorage.getItem("theme") || 'light')
+const {authActiveTab} = useAuth()
 
   useEffect(()=>{
     const root = window.document.documentElement;
@@ -28,8 +32,15 @@ const Auth = () => {
       
     }
   }, [theme])
+
+
   return (
-    <div className='mx-auto bg-brand-bg transition-colors duration-300 relative'>
+    <div className='relative'>
+      <div className={`${authActiveTab ? 'flex' : 'hidden'} fixed top-0 left-0 right-0 h-full w-full overflow-y-hidden bg-transparent  xl z-1000 backdrop-blur-[5px]  items-center justify-center`}>
+        <AuthForm/>
+      </div>
+      <div className="mx-auto bg-brand-bg transition-colors duration-300">
+
       <button onClick={()=> setTheme(theme === 'dark'?'light':'dark')} className="fixed z-50 bottom-5 right-5 bg-brand-bg shadow-xs shadow-brand-muted rounded-full h-10 w-10 flex justify-center items-center text-lg">
         {theme === 'dark' ? <LuSun/> : <LuMoon/>}
       </button>
@@ -106,6 +117,7 @@ const Auth = () => {
         </div>
       </footer>
     </div>
+      </div>
   );
 };
 

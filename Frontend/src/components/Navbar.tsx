@@ -1,3 +1,5 @@
+import GetStartedbutton from '@/feature/Auth/components/GetStartedbutton';
+import LoginButton from '@/feature/Auth/components/LoginButton';
 import React, { useState } from 'react'
 
 import { IoMenu } from 'react-icons/io5';
@@ -20,9 +22,9 @@ const Navbar:React.FC = () => {
               <li>Feature</li>
             </ul>
           </div>
-          <div className='hidden md:flex w-full justify-end gap-8 font-medium text-[14px] items-center'>
-            <button className='bg-brand-primary text-white py-2 rounded-md text-center px-4'>Get Started</button>
-            <button className='border border-brand-border text-brand-text py-2 rounded-md text-center px-4 hover:border-brand-primary'>Log In</button>
+          <div className='hidden md:flex w-full justify-end gap-8 font-medium text-[14px] items-center max-w-80'>
+           <GetStartedbutton/>
+           <LoginButton />
           </div>
 
           <button onClick={()=>{setNavOpen(!navOpen)}} className='flex md:hidden text-3xl'>
@@ -42,7 +44,7 @@ const Navbar:React.FC = () => {
             </ul>
           </div>
           <div className=' w-full justify-end gap-3 font-medium text-[14px] items-center flex flex-col border-t py-2 border-brand-border'>
-            <button className='bg-brand-primary text-white py-2 rounded-md text-center px-4 w-full'>Get Started</button>
+            <GetStartedbutton/>
             <button className='border border-brand-border text-brand-text py-2 rounded-md text-center px-4 hover:border-brand-primary w-full'>Log In</button>
           </div>
 

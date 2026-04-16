@@ -1,8 +1,13 @@
 import ColoredDot from '@/components/utilities/ColoredDot'
 import { Reveal } from '@/components/utilities/Reveal'
 
+import GetStartedbutton from './GetStartedbutton'
+
+import LoginButton from './LoginButton'
+
 
 const HeroSection = () => {
+
   return (
     <Reveal delay={0.2}>
 
@@ -23,9 +28,9 @@ const HeroSection = () => {
                  Create, organize, and share your knowledge. Store files, notes, and sensitive data in one secure place. Learn without distraction.
                </div>
                <div className='flex w-full justify-center items-center gap-8 max-w-sm font-medium text-lg'>
-                 <button className='bg-brand-primary text-white py-3 rounded-md text-center w-full'>Get Started</button>
-                 <button className='border border-brand-primary text-brand-text py-3 rounded-md text-center w-full hover:bg-brand-primary/10'>Log In</button>
-               </div>
+                 <GetStartedbutton />
+                 <LoginButton/>
+                 </div>
                <div>
                  <ul className='flex gap-4 text-brand-muted text-sm'>
                    <li>• Notes & Files</li>
