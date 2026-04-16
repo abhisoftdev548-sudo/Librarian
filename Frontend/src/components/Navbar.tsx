@@ -13,16 +13,16 @@ const Navbar:React.FC = () => {
       <div className='flex flex-col h-full'>
 
         <div className="flex py-5 justify-between items-center px-5 max-w-[90%] mx-auto w-full ">
-          <div className='w-full text-3xl font-bold text-brand-text'>
+          <div className='w-full max-w-xs text-3xl font-bold text-brand-text'>
             Librarian
           </div>
           <div className='w-full items-center hidden md:flex'>
-            <ul className='text-brand-muted flex w-full justify-center gap-8 font-medium text-sm'>
+            <ul className='text-brand-muted flex w-full justify-center  gap-8 font-medium text-sm '>
               <li>About</li>
               <li>Feature</li>
             </ul>
           </div>
-          <div className='hidden md:flex w-full justify-end gap-8 font-medium text-[14px] items-center max-w-80'>
+          <div className='hidden md:flex w-full justify-end gap-8 font-medium text-[14px] items-center max-w-70'>
            <GetStartedbutton/>
            <LoginButton />
           </div>

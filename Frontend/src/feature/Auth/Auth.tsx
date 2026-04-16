@@ -14,25 +14,27 @@ import { Reveal } from "@/components/utilities/Reveal";
 
 import { useAuth } from "@/Context/AuthContext";
 import AuthForm from "./AuthForm/AuthForm";
+import FeatureShowCard from "./components/FeatureShowCard";
+import { useTheme } from "@/Context/ThemeContext";
 
 
 const Auth = () => {
 
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || 'light')
+  // const [theme, setTheme] = useState(localStorage.getItem("theme") || 'light')
 const {authActiveTab} = useAuth()
 
-  useEffect(()=>{
-    const root = window.document.documentElement;
-    if(theme === 'dark'){
-      root.classList.add('dark')
-      localStorage.setItem('theme', 'dark')
-    }else{
-      root.classList.remove('dark')
-      localStorage.setItem('theme', 'light')
+  // useEffect(()=>{
+  //   const root = window.document.documentElement;
+  //   if(theme === 'dark'){
+  //     root.classList.add('dark')
+  //     localStorage.setItem('theme', 'dark')
+  //   }else{
+  //     root.classList.remove('dark')
+  //     localStorage.setItem('theme', 'light')
       
-    }
-  }, [theme])
-
+  //   }
+  // }, [theme])
+const {theme, setTheme} = useTheme()
 
   return (
     <div className='relative'>
@@ -85,9 +87,9 @@ const {authActiveTab} = useAuth()
 
         {/* Feature Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 max-w-6xl py-10 gap-10">
-          <Card Icon={IoBookOutline} title="Smart Library Creation" />
-          <Card Icon={SlNotebook} title="Encrypted Lockers" />
-          <Card Icon={LuLock} title="Secure Storage" />
+          <FeatureShowCard Icon={IoBookOutline} title="Smart Library Creation" />
+          <FeatureShowCard Icon={SlNotebook} title="Encrypted Lockers" />
+          <FeatureShowCard Icon={LuLock} title="Secure Storage" />
         </div>
       </section>
 
@@ -122,22 +124,7 @@ const {authActiveTab} = useAuth()
 };
 
 // Reusable Small Components
-const Card = ({ Icon, title }: { Icon: any, title: string }) => (
-  <div className="flex flex-col justify-center shadow-xl hover:shadow-2xl transition-all duration-400 hover:-translate-y-2 border rounded-md border-brand-border bg-brand-card">
-    <div className="bg-brand-hero min-h-40 flex items-center justify-center">
-      <img src="./favicon.svg" alt="" className="w-16 opacity-50" />
-    </div>
-    <div className="p-10 flex flex-col gap-2">
-      <div className="flex gap-2 items-center font-bold text-lg text-brand-text">
-        <span className="p-2 rounded-md bg-brand-hero"><Icon/></span>
-        <span>{title}</span>
-      </div>
-      <div className="text-start text-brand-muted text-sm">
-        Build organized digital libraries for any subject in a structured environment.
-      </div>
-    </div>
-  </div>
-);
+
 
 const FooterList = ({ title, items }: { title: string, items: string[] }) => (
   <div className="flex flex-col gap-2">

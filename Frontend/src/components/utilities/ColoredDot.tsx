@@ -7,7 +7,7 @@ const ColoredDot:React.FC<ColorDotProps> = ({color}) => {
    
   return (
     
-      <span className={`min-w-2 min-h-2 rounded-full bg-${color} inline-block`}></span>
+      <span className={`w-2 h-2 rounded-full bg-${color}  flex`}></span>
     
   )
 }
