@@ -1,0 +1,244 @@
+
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <meta charset="UTF-8">
+          <title>Present Students Report</title>
+          <style>
+            body {
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              margin: 0;
+              padding: 20px;
+              background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+              color: #333;
+              min-height: 100vh;
+            }
+            .container {
+              max-width: 1000px;
+              margin: 0 auto;
+              background: white;
+              border-radius: 15px;
+              padding: 30px;
+              box-shadow: 0 10px 40px rgba(31, 38, 135, 0.4);
+            }
+            .header {
+              text-align: center;
+              margin-bottom: 30px;
+              border-bottom: 3px solid #667eea;
+              padding-bottom: 20px;
+            }
+            .header h1 {
+              font-size: 2.5em;
+              margin: 0;
+              color: #667eea;
+              text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            }
+            .header p {
+              font-size: 1em;
+              color: #666;
+              margin: 10px 0 0 0;
+            }
+            .stats-section {
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+              gap: 15px;
+              margin-bottom: 30px;
+            }
+            .stat-card {
+              background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+              border-radius: 10px;
+              padding: 20px;
+              text-align: center;
+              color: white;
+              box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+            }
+            .stat-number {
+              font-size: 2.5em;
+              font-weight: bold;
+              margin: 0;
+            }
+            .stat-label {
+              font-size: 0.9em;
+              opacity: 0.9;
+              margin: 5px 0 0 0;
+            }
+            .table-section {
+              margin-top: 30px;
+            }
+            .section-title {
+              font-size: 1.5em;
+              color: #667eea;
+              margin-bottom: 20px;
+              border-bottom: 2px solid #667eea;
+              padding-bottom: 10px;
+              font-weight: bold;
+            }
+            table {
+              width: 100%;
+              border-collapse: collapse;
+              margin-top: 15px;
+              box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            }
+            table thead {
+              background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+              color: white;
+            }
+            table th {
+              padding: 15px;
+              text-align: left;
+              font-weight: 600;
+              border-bottom: 2px solid #667eea;
+            }
+            table td {
+              padding: 12px 15px;
+              border-bottom: 1px solid #e0e0e0;
+            }
+            table tbody tr:nth-child(odd) {
+              background-color: #f9f9f9;
+            }
+            table tbody tr:hover {
+              background-color: #f0f0ff;
+              transition: background-color 0.2s;
+            }
+            table tbody tr:last-child td {
+              border-bottom: 2px solid #667eea;
+            }
+            .footer {
+              text-align: center;
+              margin-top: 30px;
+              padding-top: 20px;
+              border-top: 2px solid #e0e0e0;
+              color: #666;
+              font-size: 0.9em;
+            }
+            .timestamp {
+              color: #999;
+              font-size: 0.85em;
+            }
+          </style>
+        </head>
+        <body>
+          <div class="container">
+            <div class="header">
+              <h1>📋 Present Students Report</h1>
+              <p class="timestamp">Generated on 4/18/2026 at 3:51:12 AM</p>
+            </div>
+
+            <div class="stats-section">
+              <div class="stat-card">
+                <div class="stat-number">10</div>
+                <div class="stat-label">Total Present</div>
+              </div>
+              
+                <div class="stat-card">
+                  <div class="stat-number">6</div>
+                  <div class="stat-label">CS</div>
+                </div>
+              
+                <div class="stat-card">
+                  <div class="stat-number">2</div>
+                  <div class="stat-label">EE</div>
+                </div>
+              
+                <div class="stat-card">
+                  <div class="stat-number">2</div>
+                  <div class="stat-label">IT</div>
+                </div>
+              
+            </div>
+
+            <div class="table-section">
+              <div class="section-title">👥 Present Students Details</div>
+              <table>
+                <thead>
+                  <tr>
+                    <th style="width: 5%;">S.No</th>
+                    <th style="width: 40%;">Name</th>
+                    <th style="width: 30%;">Branch</th>
+                    <th style="width: 25%;">Semester</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                    <tr>
+                      <td><strong>1</strong></td>
+                      <td>Abhishek Gupta</td>
+                      <td>CS</td>
+                      <td>2nd</td>
+                    </tr>
+                  
+                    <tr>
+                      <td><strong>2</strong></td>
+                      <td>Anuj Omre</td>
+                      <td>CS</td>
+                      <td>2nd</td>
+                    </tr>
+                  
+                    <tr>
+                      <td><strong>3</strong></td>
+                      <td>Dev Agrawal</td>
+                      <td>IT</td>
+                      <td>2nd</td>
+                    </tr>
+                  
+                    <tr>
+                      <td><strong>4</strong></td>
+                      <td>Hukum Singh</td>
+                      <td>CS</td>
+                      <td>2nd</td>
+                    </tr>
+                  
+                    <tr>
+                      <td><strong>5</strong></td>
+                      <td>Ketan prajapati</td>
+                      <td>CS</td>
+                      <td>2nd</td>
+                    </tr>
+                  
+                    <tr>
+                      <td><strong>6</strong></td>
+                      <td>Prabal Dixit</td>
+                      <td>EE</td>
+                      <td>2nd</td>
+                    </tr>
+                  
+                    <tr>
+                      <td><strong>7</strong></td>
+                      <td>Raghvendra Ahirvar</td>
+                      <td>EE</td>
+                      <td>2nd</td>
+                    </tr>
+                  
+                    <tr>
+                      <td><strong>8</strong></td>
+                      <td>Rajraja Bundela</td>
+                      <td>CS</td>
+                      <td>2nd</td>
+                    </tr>
+                  
+                    <tr>
+                      <td><strong>9</strong></td>
+                      <td>Shiv Agraval</td>
+                      <td>IT</td>
+                      <td>2nd</td>
+                    </tr>
+                  
+                    <tr>
+                      <td><strong>10</strong></td>
+                      <td>Shivansh Yadav</td>
+                      <td>CS</td>
+                      <td>2nd</td>
+                    </tr>
+                  
+                </tbody>
+              </table>
+            </div>
+
+            <div class="footer">
+              <p>✓ Generated by Attendance Taker Application</p>
+              <p><strong>Created by:</strong> Abhishek</p>
+            </div>
+          </div>
+        </body>
+      </html>
+    
